@@ -1,32 +1,50 @@
 '.source.cs':
-  'hola':
-    'prefix': 'unity'
-    'body': '''
+  'int':
+    'prefix': 'int'
+    'body': 'int $1'
+  'debug':
+    'prefix': 'Debug.Log();'
+    'body': 'Debug.Log($1);'
+  'public':
+    'prefix': 'public'
+    'body': 'public $1'
+  'elPrintUnityPapu':
+    'prefix': 'unityBasico'
+    'body': """
     using UnityEngine;
     using System.Collections;
 
-    public class Nombre : MonoBehaviour {
-        //precentacion de variables
+    public class nombreDeProyecto : MonoBehaviour {
 
-        //precentacion de variables
-        void Start ()
-        {
-        }
-        // Update is called once per frame
-        void Update ()
-        {
-        }
+    // Use this for initialization
+    	void Start () {
+
 
     }
-    '''
-'.source.cs':
-  'debug':
-    'prefix': 'debug'
-    'body': '''
-    debug.log($1);
-    '''
+    // Por cada actualizacion has esto
+    	void Update () {
 
+    	}
+    }
+    """
+  'funcion-metodo':
+    'prefix': 'void-funcion-metodo'
+    'body': """
+    void ${1:nombreDeFuncion}() {
 
+      ${2:Debug.Log(numero1 + numero2);}
+      //llamarlo nombreDeFuncion ()
+    }
+    """
+  'float flotante 0.1':
+    'prefix': 'float'
+    'body': 'float $1;'
+  'string':
+    'prefix': 'string'
+    'body': 'string $1;'
+  'bool true false':
+    'prefix': 'bool'
+    'body': 'bool ${1:nombreDeVariable} = ${2:true false};'
 
 ###
 return
