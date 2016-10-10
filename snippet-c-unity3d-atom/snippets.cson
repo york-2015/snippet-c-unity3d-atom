@@ -45,13 +45,38 @@
   'bool true false':
     'prefix': 'bool'
     'body': 'bool ${1:nombreDeVariable} = ${2:true false};'
-
-###
-return
-Update
-LateUpdate
-FixedUpdate
-Awake
-Start
-
-###
+  'Update':
+    'prefix': 'Update'
+    'body': '''
+    void Update () {
+        $1
+    }
+    '''
+  'LateUpdate':
+    'prefix': 'LateUpdate'
+    'body': '''
+    void LateUpdate () {
+        $1
+    }
+    '''
+  'FixedUpdate':
+    'prefix': 'FixedUpdate'
+    'body': '''
+    void FixedUpdate () {
+        $1
+    }
+    '''
+  'Awake':
+    'prefix': 'Awake'
+    'body': '''
+    void Awake () {
+        $1
+    }
+    '''
+  'Start':
+    'prefix': 'Start'
+    'body': '''
+    void Start () {
+        $1
+    }
+    '''
