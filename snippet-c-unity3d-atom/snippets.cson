@@ -25,3 +25,15 @@
     'body': '''
     debug.log($1);
     '''
+
+
+
+###
+return
+Update
+LateUpdate
+FixedUpdate
+Awake
+Start
+
+###
