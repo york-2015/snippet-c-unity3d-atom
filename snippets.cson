@@ -1,0 +1,27 @@
+'.source.cs':
+  'hola':
+    'prefix': 'unity'
+    'body': '''
+    using UnityEngine;
+    using System.Collections;
+
+    public class Nombre : MonoBehaviour {
+        //precentacion de variables
+
+        //precentacion de variables
+        void Start ()
+        {
+        }
+        // Update is called once per frame
+        void Update ()
+        {
+        }
+
+    }
+    '''
+'.source.cs':
+  'debug':
+    'prefix': 'debug'
+    'body': '''
+    debug.log($1);
+    '''
