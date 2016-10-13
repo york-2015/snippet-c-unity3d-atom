@@ -1,4 +1,13 @@
 '.source.cs':
+  'condiciones':
+    'prefix': 'condiciones'
+    'body': """
+    //&& = y || = o
+    //if (variable >= 35 || variableQueDaComoResultadoTrue)
+    //{
+    //
+    //}
+    """
   'int':
     'prefix': 'int'
     'body': 'int $1'
@@ -30,9 +39,9 @@
   'funcion-metodo':
     'prefix': 'void-funcion-metodo'
     'body': """
-    void ${1:nombreDeFuncion}() {
+    void ${1:nombreDeFuncion}(${2:int varibleLoca}) {
 
-      ${2:Debug.Log(numero1 + numero2);}
+      ${3:Debug.Log(numero1 + numero2);}
       //llamarlo nombreDeFuncion ()
     }
     """
